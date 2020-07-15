@@ -1,5 +1,14 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+}
+
 li {
-    padding: 10px;
+    padding: 8px;
 }
 
 a {
@@ -9,10 +18,32 @@ a {
     color: rgba(255, 255, 255, 0.5);
 }
 
+i {
+    color: whitesmoke;
+    display: none;
+}
+
 .active {
     border: 1px solid white;
 }
 .active a {
     font-weight: bold;
     color: whitesmoke;
+}
+
+@media only screen and (max-width: 1000px) {
+    ul {
+        margin-top: 10px;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    i {
+        display: inline;
+    }
+
+    ul {
+        flex-direction: column;
+    }
 }

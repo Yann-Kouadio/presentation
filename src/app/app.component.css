@@ -40,3 +40,26 @@ button.bg-primary:hover,
 button.bg-primary:focus {
     background-color: #964a2c !important;
 }
+
+@media only screen and (max-width: 1000px) {
+    .container-df {
+        position: initial;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+    }
+
+    .right-content {
+        background: white !important;
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .left-content {
+        padding: 10px 0;
+    }
+}

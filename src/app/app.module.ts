@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { AirCubeComponent } from './air-cube/air-cube.component';
 import { CreditAgricoleComponent } from './credit-agricole/credit-agricole.component';
 import { TechnodreamComponent } from './technodream/technodream.component';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -23,6 +25,8 @@ import { TechnodreamComponent } from './technodream/technodream.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        BrowserAnimationsModule,
+        CollapseModule.forRoot(),
         RouterModule.forRoot(appRoutes)
     ],
     providers: [],
